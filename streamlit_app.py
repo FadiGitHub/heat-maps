@@ -34,7 +34,9 @@ if uploaded_file is not None:
 
     # Create a Matplotlib figure and plot the heatmap
     fig, ax = plt.subplots()
-    sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', ax=ax)
+    sns.heatmap(corr_matrix, annot=True, cmap='magma', ax=ax,
+                xticklabels=corr_matrix.columns, yticklabels=corr_matrix.index,
+                cbar_kws={'orientation': 'vertical'})
 
     # Display the plot using Streamlit's st.pyplot()
     st.pyplot(fig)
