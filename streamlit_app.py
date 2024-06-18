@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # App title
-st.title('Heatmap App')
+st.title('Heatmap App New')
 
 # File uploader for CSV file
 uploaded_file = st.file_uploader("Upload a CSV file", type="csv")
